@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    height: 15vh;
+}
+
+.header-left {
+    flex: 1;
+    color: white;
+}
+
+.header-right {
+    flex: 1;
+}
+
+.header-left-wrapper {
+    padding: 50px;
+}

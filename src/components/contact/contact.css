@@ -1,0 +1,16 @@
+.contact-form {
+    margin: 20px;
+}
+
+.form input {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.form textarea {
+    width: 100%;
+    border-radius: 4px;
+    height: 200px;
+}
