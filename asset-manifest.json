@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.da6f19fa.css",
+    "main.js": "/React-Portfolio/static/js/main.eb2c04b1.js",
+    "static/media/header.jpg": "/React-Portfolio/static/media/header.7a8a0f31c9e4858bc099.jpg",
+    "static/media/weather-dashboard.png": "/React-Portfolio/static/media/weather-dashboard.9dde8629c281c58acbc6.png",
+    "static/media/music-trivia-v2.png": "/React-Portfolio/static/media/music-trivia-v2.2e782bd850a4f319cba1.png",
+    "static/media/coding-quiz.png": "/React-Portfolio/static/media/coding-quiz.6b6334625663c4eb1797.png",
+    "static/media/music-trivia.png": "/React-Portfolio/static/media/music-trivia.e353a2e2b96c2616357f.png",
+    "static/media/budget-tracker.png": "/React-Portfolio/static/media/budget-tracker.c50048c495f78b311f95.png",
+    "static/media/me.jpeg": "/React-Portfolio/static/media/me.19485993cbdf7b6dff46.jpeg",
+    "static/media/workout-tracker.png": "/React-Portfolio/static/media/workout-tracker.cd0d74ad4cf5fde55e09.png",
+    "static/media/linkedin.svg": "/React-Portfolio/static/media/linkedin.115d3af0320cfa2e8e34ba26d011a603.svg",
+    "index.html": "/React-Portfolio/index.html",
+    "main.da6f19fa.css.map": "/React-Portfolio/static/css/main.da6f19fa.css.map",
+    "main.eb2c04b1.js.map": "/React-Portfolio/static/js/main.eb2c04b1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da6f19fa.css",
+    "static/js/main.eb2c04b1.js"
+  ]
+}
