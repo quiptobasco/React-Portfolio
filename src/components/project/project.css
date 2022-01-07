@@ -10,6 +10,7 @@
     width: 350px;
     height: 350px;
     padding: 10px 20px 20px;
+    position: relative;
 }
 
 .project-item img {
@@ -17,7 +18,30 @@
     height: auto;
 }
 
-.project-item a {
-    padding: 15px;
-    text-align: center;
+.project-item:hover img {
+    opacity: 20%;
 }
+
+.project-item-description {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    visibility: hidden;
+    opacity: 0; 
+    display: block;
+}
+
+.project-item-description img {
+    height: auto;
+    width: auto;
+}
+
+.project-item-description:hover img {
+    opacity: 100%;
+}
+
+.project-item:hover .project-item-description {
+    visibility: visible;
+    opacity: 1;
+}
+

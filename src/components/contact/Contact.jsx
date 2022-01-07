@@ -2,58 +2,61 @@ import React, { useState } from 'react';
 import './contact.css';
 
 const Contact = () => {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
+    const [formState, setFormState] = useState({
+        Name: '',
+        Email: '',
+        Message: '',
+    });
+
     const [error, setError] = useState('');
 
-    const handleInputChange = (event) => {
+    const handleInputChange = (event) => {;
         const { name, value } = event.target;
+        const r = new RegExp(/.+@.+\..+/);
+
+        setFormState({
+            ...formState,
+            [name]: value,
+        });
 
         if (!value) {
             return setError(`${name} field cannot be empty`);
         } else {
-            if (name === 'name') {
-                return setName(value);
-            }
-            if (name === 'email') {
-                return setEmail(value);
-            }
-            if (name === 'message') {
-                return setMessage(value);
-            }
+            setError('');
         }
 
-    }
+        if (name === 'Email' && !r.test(formState.Email)) {
+            setError('Please enter a valid email address.');
+        } else {
+            setError('');
+        }
+    };
 
-    const handleFormSubmit = (event) => {
+    const handleFormSubmit = async (event) => {
         event.preventDefault();
-
-        setName('');
-        setEmail('');
-        setMessage('');
+        console.log(formState);
     };
 
     return (
         <div className="contact-form">
             <form className="form">
                 <input
-                    value={name}
-                    name="name"
+                    value={formState.Name}
+                    name="Name"
                     onChange={handleInputChange}
                     type="text"
                     placeholder="Name"
                 />
                 <input
-                    value={email}
-                    name="email"
+                    value={formState.Email}
+                    name="Email"
                     onChange={handleInputChange}
-                    type="text"
+                    type="email"
                     placeholder="Email"
                 />
                 <textarea
-                    value={message}
-                    name="message"
+                    value={formState.Message}
+                    name="Message"
                     onChange={handleInputChange}
                     type="text"
                     placeholder="Message"
